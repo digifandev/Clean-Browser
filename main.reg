@@ -1,0 +1,53 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\BraveSoftware\Brave]
+
+; 🔒 Brave funkciók teljes tiltása
+"BraveRewardsDisabled"=dword:00000001
+"BraveWalletDisabled"=dword:00000001
+"BraveVPNDisabled"=dword:00000001
+"BraveAIChatEnabled"=dword:00000000
+
+; 🌍 Minden háttér hozzáférés tiltása
+"DefaultGeolocationSetting"=dword:00000002
+"DefaultNotificationsSetting"=dword:00000002
+"DefaultLocalFontsSetting"=dword:00000002
+"DefaultSensorsSetting"=dword:00000002
+"DefaultSerialGuardSetting"=dword:00000002
+
+; 📡 Telemetria teljes kikapcsolása
+"CloudReportingEnabled"=dword:00000000
+"MetricsReportingEnabled"=dword:00000000
+"DeviceMetricsReportingEnabled"=dword:00000000
+"HeartbeatEnabled"=dword:00000000
+"LogUploadEnabled"=dword:00000000
+
+; 🔐 Jelszó és autofill tiltás
+"PasswordManagerEnabled"=dword:00000000
+"PasswordLeakDetectionEnabled"=dword:00000000
+"AutofillCreditCardEnabled"=dword:00000000
+
+; 🧠 Extra funkciók OFF
+"QuickAnswersEnabled"=dword:00000000
+"ParcelTrackingEnabled"=dword:00000000
+"ShoppingListEnabled"=dword:00000000
+
+; 🔒 Safe browsing extra funkciók OFF
+"SafeBrowsingExtendedReportingEnabled"=dword:00000000
+"SafeBrowsingSurveysEnabled"=dword:00000000
+"SafeBrowsingDeepScanningEnabled"=dword:00000000
+
+; ⚙️ Rendszer optimalizálás
+"BackgroundModeEnabled"=dword:00000000
+"BrowserGuestModeEnabled"=dword:00000000
+"BrowserSignin"=dword:00000000
+"BuiltInDnsClientEnabled"=dword:00000000
+"DefaultBrowserSettingEnabled"=dword:00000000
+
+; 💾 RAM spórolás
+"DriveDisabled"=dword:00000001
+"AlternateErrorPagesEnabled"=dword:00000000
+"RelatedWebsiteSetsEnabled"=dword:00000000
+
+; 🔥 Manifest V2 vissza (kevesebb RAM extensionöknél)
+"ExtensionManifestV2Availability"=dword:00000002
